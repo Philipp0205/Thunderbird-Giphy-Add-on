@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "78 ESR",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "firefoxExecutable": "C:\\Program Files\\Mozilla Thunderbird\\thunderbird.exe",
+            "reloadOnChange": {
+                "watch": "${workspaceFolder}/**/*.js",
+                "ignore": "**/node_modules/**"
+            },
+            "profileDir": "C:\\Users\\philipp.kurrle\\AppData\\Roaming\\Thunderbird\\Profiles\\o2954crv.default-release",
+            "keepProfileChanges": true,
+            "internalConsoleOptions": "openOnSessionStart",
+            "addonPath": "C:\\Users\\philipp.kurrle\\Documents\\vscode_repos\\thunderbird\\sample-extensions\\hello-world"
+        },
+    ]
+}

@@ -1,0 +1,166 @@
+@font-face {
+    font-family: twemoji;
+    src: url("../font/twemoji.ttf");
+}
+
+@font-face {
+    font-family: twemoji-fix-macos;
+    src: url("../font/twemoji-fix-macos.ttf");
+}
+
+@font-face {
+    font-family: joypixels;
+    src: url("../font/joypixels.ttf");
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url("../font/opensans.ttf");
+}
+
+@font-face {
+    font-family: notocoloremoji;
+    src: url("../font/notocoloremoji.ttf");
+}
+
+@font-face {
+    font-family: openmoji-color;
+    src: url("../font/openmojicolor.ttf");
+}
+
+@font-face {
+    font-family: openmoji-black;
+    src: url("../font/openmojiblack.ttf");
+}
+
+
+#popup-content {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+#top-section {
+    display: flex; /* Aligns children (search bar and button) in a row */
+    align-items: center; /* Centers the items vertically */
+    justify-content: space-between; /* Spreads out the children */
+}
+
+.data-input {
+    flex-grow: 1; /* Search bar takes up available space */
+    margin-right: 10px; /* Space between the search bar and any adjacent element */
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 30px; /* Ensure consistency in padding-left (corrected from 30 to 30px) */
+    height: 32px;
+    width: 100%;
+    font: inherit;
+    font-size: 14px;
+    transition: 0.1s;
+    font-family: 'open-sans', sans-serif; /* Ensure font-family is properly quoted */
+    background-image: url("../images/search.svg"); /* Assuming the correct path is the most recently specified */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 12px auto;
+}
+
+.button {
+    background-color: #f2f2f2;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    font-size: 22px;
+    /*font-family: twemoji, sans-serif;*/
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Same as search bar */
+    border: 1px solid transparent;
+}
+
+.square-button {
+    background-color: #f2f2f2;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    color: black;
+    border-radius: 5px;
+    font-size: 22px;
+    /*font-family: twemoji, sans-serif;*/
+    margin: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Same as search bar */
+    border: 1px solid transparent;
+}
+
+#settings-button {
+    background-image: url("../images/settings.svg");
+}
+
+#hide-settings-button {
+    background-image: url("../images/x.svg");
+}
+
+#save-api-key-button {
+    background-image: url("../images/save.svg");
+}
+
+/* Style for the GIF container */
+#gif-container {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: repeat(2, minmax(100px, 250px));
+    grid-gap: 10px; /* Space between GIFs */
+    padding: 10px;
+    overflow-y: auto; /* Enables scrolling if many GIFs are added */
+    max-height: 400px; /* Adjust as needed */
+}
+
+.red-button {
+    background-color: rgb(255, 214, 214);
+}
+
+/* Style for individual GIF images */
+#gif-container img {
+    width: 100%; /* Makes GIFs responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+#hide-settings-button {
+    position: absolute;
+    top: 10px; /* Adjust as necessary */
+    right: 10px; /* Adjust as necessary */
+    /* Other styles for hide-settings-button */
+}
+
+#page1 {
+    display: block;
+}
+
+#page2 {
+    display: none;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+  border: 0; /* Remove the default border */
+  height: 1px; /* Set the height of the line */
+  background-color: #d3d3d3; /* Light grey color */
+}
